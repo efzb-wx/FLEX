@@ -2,5 +2,7 @@
   "input_sha256": "8cd72f8d8563bec045dee6c188aadcdbc90fedfa689e24cb7245d3b758bed519",
   "header_count": 187,
   "exported_FLEX_symbol_count": 424,
-  "status": "build inputs staged; no iOS binary compiled or device-tested"
+  "status": "Build inputs for Swift mirror add-on; device runtime not verified",
+  "reflex_revision": "2b992b7eddbf0420a8dcc66630b3d3abfe1a9a48",
+  "echo_revision": "e912ad88d3524725127f5163a2c5015573078b08"
 }
