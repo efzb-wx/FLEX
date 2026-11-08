@@ -1,0 +1,5 @@
+module FLEX {
+    header "include/FLEXBridge.h"
+    export *
+    link "flex"
+}

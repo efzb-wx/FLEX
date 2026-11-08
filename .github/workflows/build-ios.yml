@@ -1,0 +1,34 @@
+name: Build Swift inspection module
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build arm64 iOS dylib
+        run: bash scripts/build-ios.sh
+      - name: Upload iPhone module
+        uses: actions/upload-artifact@v4
+        with:
+          name: NBFLEXReflex-arm64-iOS
+          path: dist/
+          if-no-files-found: error
+      - name: Upload build diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-diagnostics
+          path: |
+            build-logs/
+            Package.resolved
+          if-no-files-found: ignore
