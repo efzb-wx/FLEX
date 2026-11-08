@@ -32,7 +32,7 @@ cp "$LIB" "$ROOT/dist/libNBFLEXReflex.dylib"
 cp "$ROOT/README.md" "$ROOT/dist/README.md"
 cp "$ROOT/Support/LICENSE-FLEX.txt" "$ROOT/dist/LICENSE-FLEX.txt"
 cp "$ROOT/Support/provenance.json" "$ROOT/dist/provenance.json"
-ECHO_LICENSE="$(find "$BUILD/checkouts" -path '*/Echo/LICENSE*' -type f | head -n 1)"
+ECHO_LICENSE="$(find "$BUILD/checkouts" -ipath '*/echo/LICENSE*' -type f | head -n 1)"
 if [[ -n "$ECHO_LICENSE" ]]; then cp "$ECHO_LICENSE" "$ROOT/dist/LICENSE-Echo.txt"; fi
 ATOMICS_LICENSE="$(find "$BUILD/checkouts" -path '*/swift-atomics/LICENSE*' -type f | head -n 1)"
 if [[ -n "$ATOMICS_LICENSE" ]]; then cp "$ATOMICS_LICENSE" "$ROOT/dist/LICENSE-swift-atomics.txt"; fi

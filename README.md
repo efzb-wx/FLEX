@@ -41,6 +41,6 @@ Actions 检查编译、arm64 架构、链接依赖、Swift mirror 导出、避�
 
 - [FLEXTool/FLEX](https://github.com/FLEXTool/FLEX)，头文件 commit `dac6130e0c7aca0bbf7ff8c0b57ba284776bfdff`。
 - [FLEXTool/Reflex](https://github.com/FLEXTool/Reflex)，commit `2b992b7eddbf0420a8dcc66630b3d3abfe1a9a48`。
-- [NSExceptional/Echo](https://github.com/NSExceptional/Echo)，commit `13c06ca2d2239cf3df7854b4fa6be608a4cd59e5`，对应 Reflex Xcode 工程使用的 patch-1 分支。
+- [NSExceptional/Echo](https://github.com/NSExceptional/Echo)，commit `e912ad88d3524725127f5163a2c5015573078b08`，对应 Reflex Xcode 工程使用的 patch-1 分支。
 
 保留相应项目许可证；链接桩根据指定原工具的导出符号生成，不含原工具实现。

@@ -6,7 +6,7 @@ let package = Package(
     platforms: [.iOS(.v13)],
     products: [.library(name: "NBFLEXReflex", type: .dynamic, targets: ["Reflex"])],
     dependencies: [
-        .package(url: "https://github.com/NSExceptional/Echo.git", revision: "13c06ca2d2239cf3df7854b4fa6be608a4cd59e5")
+        .package(url: "https://github.com/NSExceptional/Echo.git", revision: "e912ad88d3524725127f5163a2c5015573078b08")
     ],
     targets: [
         .systemLibrary(name: "FLEX", path: "Support/FLEX"),
